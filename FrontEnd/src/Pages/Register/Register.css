@@ -1,0 +1,136 @@
+/* Container for the full registration page */
+.register {
+  padding: 22px;
+  background: #e3e8ff;
+}
+
+/* Section title */
+.register h2 {
+  color: #03013c;
+  margin: 0 0 10px;
+}
+
+/* Role selection tabs */
+.role-tabs {
+  display: inline-flex; 
+  background: #f1f5fb;
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+  margin: 6px 0 14px;
+}
+.tab {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tab.active {
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 2px 10px rgba(2,6,23,.06);
+}
+
+/* Form wrapper */
+.reg-form,
+.register-card {
+  max-width: 520px;
+  display: grid;
+  gap: 12px;
+  color: #0f172a;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 20px 50px rgba(2, 6, 23, .06);
+  border: 1px solid #eef2f7;
+  margin: 0 auto;
+}
+
+/* Input fields */
+.input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  padding: 10px 12px;
+  border: 1px solid #d8dee6;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  width: 100%;
+}
+.input:focus,
+input:focus {
+  outline: none;
+  border-color: #050c48;
+  box-shadow: 0 0 0 3px rgba(5,12,72,.12);
+}
+
+/* Labels */
+.input-label,
+.file-label {
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  display: block;
+  color: #1e293b;
+}
+
+/* File name preview */
+.file-name {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-top: 4px;
+}
+
+/* Error messages */
+.error,
+.alert {
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.95rem;
+}
+
+/* Submit button */
+.btn.primary,
+button[type="submit"] {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.btn.primary:disabled,
+button[type="submit"]:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/* Hint text */
+.hint {
+  color: #041a38;
+  font-size: 0.9rem;
+}
+
+/* Login redirect link */
+.login-redirect {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.login-redirect a {
+  color: #1e3a8a;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-redirect a:hover {
+  text-decoration: underline;
+}
