@@ -26,7 +26,7 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
-@RequestMapping("/api/v1/products")
+@RequestMapping("/api/products")
 public class ProductController {
 
     private final ProductRepo productRepo;
@@ -94,7 +94,7 @@ private static final Path UPLOAD_DIR = Paths.get(
 
     // Product Images
 
-//    Return minimal objects
+    // Return minimal objects
     @GetMapping("/{id}/images")
     public List<ImageRow> listImages(@PathVariable Integer id) {
         ensureProduct(id);
