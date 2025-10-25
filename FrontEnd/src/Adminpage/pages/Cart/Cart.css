@@ -1,0 +1,54 @@
+.mediconnect-inventory-card .toolbar .btn {
+  width: auto !important;
+  min-width: 72px;                 /* enough room for "Load" */
+  height: 36px;
+  padding: 0 12px;
+  flex: 0 0 auto !important;
+
+  /* make the label visible */
+  color: #0f172a !important;       
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  /* button look */
+  background: #e9f2ff;             
+  border: 1px solid #c7d7ff;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.mediconnect-inventory-card .toolbar .btn:hover:not(:disabled) {
+  background: #dbe7ff;
+}
+
+.mediconnect-inventory-card .toolbar .btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* keep the input + button on one line */
+.mediconnect-inventory-card .toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* input style */
+.mediconnect-inventory-card .toolbar .input {
+  width: 260px;
+  height: 36px;
+  padding: 0 10px;
+  background: #fff !important;
+  color: #0f172a;
+  border: 1px solid #d0d7e2;
+  border-radius: 8px;
+  outline: none;
+  color-scheme: only light;
+}
+
+

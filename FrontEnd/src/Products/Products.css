@@ -1,0 +1,30 @@
+.products-layout{
+  display:flex;    /*display side by side */
+  align-items:flex-start;
+  gap:0;   
+  min-height:calc(100vh - 84px);
+}
+
+.mc-sidebar{                    
+  flex:0 0 290px;
+  position:sticky;  /* stays under fixed header */
+  top:84px;                     
+  z-index: 0;                  
+}
+
+.products-content{
+  flex:1;                       
+  min-width:0;        /* prevents from overflow */
+  padding:1.25rem 1.5rem;
+}
+
+@media (max-width: 920px){
+  .products-layout{ display:block; }
+  .mc-sidebar{ position:static; width:auto; }
+}
+
+
+
+
+
+

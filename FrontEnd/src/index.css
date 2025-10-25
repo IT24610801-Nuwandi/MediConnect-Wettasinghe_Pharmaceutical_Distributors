@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0a0a0a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,10 +24,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100%; 
 }
 
 h1 {
@@ -36,15 +35,22 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #1e87ff;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 0;
+  line-height: 1;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
@@ -65,4 +71,26 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .bg{
+    width : 500px;
+    height : 500px;
+    background-image: url('./Images/1.jpg');
+  }
 }
+
+html, body, #root { height: 100%; }
+body { 
+  padding-bottom: 52px;     
+}
+
+@supports (padding: max(0px)) {
+  body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+  .site-footer { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+.mediconnect-table-wrap,
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;        
+}
+
