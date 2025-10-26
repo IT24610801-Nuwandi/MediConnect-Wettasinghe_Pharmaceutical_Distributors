@@ -1,0 +1,21 @@
+.home {
+  padding: 20px;
+  background: #e3e8ff;
+  color: #020202;
+  width: 100%;
+}
+
+.home h1 {
+  color: #03013c;
+  align-items: left;
+}
+
+.home h2,
+.home h3 {
+  color: #2f3bac;
+  font:icon;
+  size: initial;
+  font-weight: bold;
+}
+
+

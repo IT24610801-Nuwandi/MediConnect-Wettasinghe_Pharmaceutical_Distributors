@@ -65,4 +65,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .bg{
+    width : 500px;
+    height : 500px;
+    background-image: url('./Images/1.jpg');
+  }
 }
