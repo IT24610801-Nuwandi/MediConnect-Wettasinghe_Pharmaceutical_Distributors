@@ -1,0 +1,7 @@
+.d-min{max-width:520px;margin:20px auto;padding:16px;background:#fff;border:1px solid #eee;border-radius:12px;font-family:system-ui,Arial}
+h3{margin:0 0 12px}
+label{display:flex;flex-direction:column;gap:6px;margin:8px 0;font-size:14px;color:#475569}
+input{padding:10px 12px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px}
+.btns{margin-top:10px;display:flex;gap:10px;justify-content:flex-end}
+button{background:#6d8b74;color:#fff;border:none;border-radius:8px;padding:8px 14px;cursor:pointer}
+button.ghost{background:#fff;color:#0f172a;border:1px solid #e5e7eb}

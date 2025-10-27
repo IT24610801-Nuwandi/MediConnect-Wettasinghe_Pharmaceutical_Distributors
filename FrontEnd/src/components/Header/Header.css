@@ -1,0 +1,153 @@
+/* Make sure the header paints full-bleed */
+:root {
+  --main-bg:#03013c; /* header background */
+  --accent: #616de1;        /* accent (for buttons / highlights) */
+  --ink: #000000;
+}
+
+html, body {
+  margin: 0; /* avoid stray margins that break full width */
+}
+
+.site-header {
+  width: 100%;
+  background: var(--main-bg);
+  color: #5956a6;
+  position: sticky; /* stays on top */
+  top: 0;
+  z-index: 1000;
+  
+ 
+}
+
+/* a centered inner container but header background stays full width */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items:left;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+/* Brand / Logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: clamp(20px, 2.2vw, 28px);
+  color:rgb(225, 222, 255);
+  text-decoration: none;
+  white-space: normal;
+}
+
+/* Big centered search */
+.search {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  max-width: 760px;
+  margin: 0 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  background:rgb(179, 185, 238); /* white input box */
+  width: min(720px, 55vw);
+}
+
+.search input {
+  flex: 1;
+  height: 44px;
+  border: none;
+  padding: 0 14px;
+  font-size: 0.98rem;
+  color:black;
+  outline: none;
+  background:rgb(170, 168, 236);
+}
+
+.search button {
+  width: 56px;
+  border: none;
+  background:rgb(163, 186, 245);   /* light gray for contrast */
+  color: var(--main-bg);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* Right-side actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.actions a {
+  color:rgb(197, 223, 246);
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: .3px;
+}
+
+.actions .signup {
+  background: var(--accent);
+  color: #000000;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  
+}
+
+.actions .cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+/* Secondary row for main site links */
+.menu-row {
+  background:rgb(79, 125, 212);
+  border-top: 1px solid rgb(191, 197, 244);
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 16px 12px;
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+.menu a {
+  
+  color: #fff;
+  text-decoration: none;
+  font-size: .95rem;
+  opacity: .95;
+}
+
+.menu a.active{
+    color: #020b38; 
+  font-weight: bold;
+}
+.menu a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color:#01274c;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .header-inner { gap: 12px; }
+  .search { max-width: none; }
+}
+
+@media (max-width: 700px) {
+  .actions a:not(.signup):not(.cart) { display: none; }
+  .menu { overflow-x: auto; }
+}
