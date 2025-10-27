@@ -1,6 +1,6 @@
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.repo;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Repo;
 
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.entity.OrderHdr;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.OrderHdr;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,3 +10,5 @@ import java.util.List;
 public interface OrderRepo extends JpaRepository<OrderHdr, Long> {
     List<OrderHdr> findByUserIdOrderByOrderDateDesc(Integer userId);
 }
+
+

@@ -1,4 +1,4 @@
-//package com.MEDICONNECT.OrderM.controller;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Controller;//package com.MEDICONNECT.OrderM.controller;
 //
 //import com.MEDICONNECT.OrderM.entity.Discount;
 //import com.MEDICONNECT.OrderM.service.DiscountService;

@@ -1,5 +1,5 @@
 // src/main/java/com/MEDICONNECT/OrderM/config/RestExceptionHandler.java
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.config;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributorse.config;
 
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;

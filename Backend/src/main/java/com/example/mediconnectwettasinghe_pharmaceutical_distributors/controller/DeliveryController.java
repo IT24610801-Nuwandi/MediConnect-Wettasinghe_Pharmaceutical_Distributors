@@ -1,7 +1,7 @@
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.controller;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Controller;
 
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.entity.Delivery;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.service.DeliveryService;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.Delivery;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Service.DeliveryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,3 +17,5 @@ public class DeliveryController {
         return svc.getByOrder(orderId);
     }
 }
+
+

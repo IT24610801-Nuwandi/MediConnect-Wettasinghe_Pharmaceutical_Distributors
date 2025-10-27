@@ -1,7 +1,7 @@
 
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.repo;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Repo;
 
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.entity.Cart;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.Cart;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

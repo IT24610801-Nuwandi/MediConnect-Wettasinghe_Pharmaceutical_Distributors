@@ -1,11 +1,20 @@
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.service;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Service;
 
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.dto.*;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.entity.*;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.repo.*;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.DTO.OrderDto;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.DTO.OrderItemDto;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.Cart;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.CartItem;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.OrderHdr;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.OrderItem;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Repo.CartItemRepo;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Repo.CartRepo;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Repo.OrderRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
+
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -27,12 +36,12 @@ public class OrderService {
 
     /** Convert the user’s active cart to an order. */
     @Transactional
-    public OrderDto checkout(Integer userId,String promoCode) {
+    public OrderDto checkout(Integer userId) {
         Cart cart = cartRepo.findFirstByUserIdAndIsActiveTrue(userId)
-                .orElseThrow(() -> new IllegalStateException("No active cart for user"));
+                .orElseThrow(() -> new  ResponseStatusException(HttpStatus.CONFLICT, "No active cart for user"));
 
         List<CartItem> items = cartItemRepo.findAllByCart_IdOrderByAddedAtDesc(cart.getId());
-        if (items.isEmpty()) throw new IllegalStateException("Cart is empty");
+        if (items.isEmpty()) throw new ResponseStatusException(HttpStatus.CONFLICT, "Cart is empty");
 
         OrderHdr hdr = OrderHdr.builder()
                 .userId(userId)

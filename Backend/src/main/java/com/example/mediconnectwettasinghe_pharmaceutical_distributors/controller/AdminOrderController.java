@@ -1,10 +1,8 @@
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.controller;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Controller;
 
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.dto.OrderDto;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.dto.OrderItemDto;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.entity.OrderHdr;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.service.DeliveryService;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.service.OrderService;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.DTO.OrderDto;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Service.DeliveryService;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

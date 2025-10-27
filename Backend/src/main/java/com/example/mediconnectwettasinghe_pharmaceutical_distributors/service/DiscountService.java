@@ -1,7 +1,7 @@
-package com.example.mediconnectwettasinghe_pharmaceutical_distributors.service;
+package com.example.mediconnectwettasinghe_pharmaceutical_distributors.Service;
 
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.entity.Discount;
-import com.example.mediconnectwettasinghe_pharmaceutical_distributors.repo.DiscountRepo;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Entity.Discount;
+import com.example.mediconnectwettasinghe_pharmaceutical_distributors.Repo.DiscountRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
