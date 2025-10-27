@@ -1,0 +1,25 @@
+.main-footer {
+  position:absolute;
+  top: 848px;
+  left:0;
+  right: 0;
+  height: 52px;
+  background-color:#03013c;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 0px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+/* remove position:fixed if present */
+.site-footer { position: static; bottom: auto; left: auto; right: auto; }
+
+/* Whatever your footer class is (footer or .site-footer or .footer) */
+footer, .footer, .site-footer {
+  position: static;
+  inset: auto;
+  width: 100%;
+  /* optional polish */
+  box-shadow: 0 -6px 20px rgba(2,6,23,.06);
+}
+

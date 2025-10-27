@@ -1,0 +1,79 @@
+.register {
+  padding: 22px;
+  background: #01092a;
+}
+
+.register h2 {
+  color: #03013c;
+  margin: 0 0 10px;
+}
+
+/* same visual language as Login */
+.role-tabs {
+  display: inline-flex;
+  background: #f1f5fb;
+  border-radius: 999px;
+  padding: 4px;
+  gap: 4px;
+  margin: 6px 0 14px;
+}
+.tab {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tab.active {
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 2px 10px rgba(2,6,23,.06);
+}
+
+.reg-form {
+  max-width: 520px;
+  display: grid;
+  gap: 12px;
+  color: #0f172a;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 20px 50px rgba(2, 6, 23, .06);
+  border: 1px solid #eef2f7;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #d8dee6;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+.input:focus {
+  outline: none;
+  border-color: #050c48;
+  box-shadow: 0 0 0 3px rgba(5,12,72,.12);
+}
+
+.alert {
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.btn.primary {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.btn.primary:disabled { opacity: .7; cursor: not-allowed; }
+
+.hint { color: #041a38; }

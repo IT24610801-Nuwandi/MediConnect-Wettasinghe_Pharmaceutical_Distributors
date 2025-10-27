@@ -1,3 +1,4 @@
+.main-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background: #eceffd;color: #e3e8ff} 
  /* .main-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background: #e3e8ff;color: #e3e8ff}  */
 .brand a{color:rgb(1, 45, 30);text-decoration:none}
 .nav{display:flex;gap:12px;align-items:center}
@@ -13,6 +14,7 @@
     background-image: url('./Images/1.jpg');
   }
 
+html, body {
 /* html, body 
 { overflow-x: hidden; } */
 
@@ -25,6 +27,20 @@
   padding: 0;
 }
 
+#root, .App {
+  margin: 0;
+  padding: 0;
+}
+
+/* sticky-at-bottom layout */
+html, body, #root { height: 100%; }
+.app-shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-header { flex: 1 0 auto; }      /* content grows */
+footer, .footer { flex-shrink: 0; }   /* footer stays at the end */
 /* sticky-at-bottom layout */
 html, body, #root { height: 100%; }
 .app-shell {
