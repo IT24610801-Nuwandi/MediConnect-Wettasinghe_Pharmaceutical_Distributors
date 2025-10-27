@@ -1,0 +1,67 @@
+/* Page background + container */
+body {
+  margin: 0;
+  background: #f6f7fb;              /* light grey like the mock */
+  font-family: system-ui, Arial, sans-serif;
+  color: #0f172a;                    /* default text = near-black */
+}
+.container { max-width: 740px; margin: 16px auto; padding: 0 12px; }
+
+/* Orders page */
+.orders-page { max-width: 720px; margin: 12px auto; padding: 0 12px; }
+.orders-title {
+  margin: 8px 0 10px;
+  color: #0f172a;                    /* title in black */
+}
+
+/* Tabs (black text; active = orange underline only) */
+.orders-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e5e7eb; /* subtle divider */
+  margin-bottom: 12px;
+}
+.tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  font-weight: 600;
+  color: #0f172a;                    /* black tab text */
+}
+.tab.active {
+  color: #0f172a;                    /* keep text black */
+  border-bottom: 2px solid #ea580c;  /* orange underline */
+}
+
+/* List & cards */
+.orders-list { display: flex; flex-direction: column; gap: 12px; }
+.orders-empty { padding: 20px; color: #64748b; }
+
+.order-card {
+  background: #ffffff;               /* white card (not yellow) */
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.order-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 0; border-bottom: 1px dashed #f0f0f0;
+}
+.order-row:last-child { border-bottom: none; }
+
+.label { color: #475569; }
+.value { color: #0f172a; }
+.value.strong { font-weight: 700; }
+
+/* Status badges */
+.badge {
+  font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 999px;
+  background: #eef2ff; color: #1d4ed8;
+}
+.badge.pending          { background:#fff7ed; color:#c2410c; }
+.badge.confirmed        { background:#eef2ff; color:#1d4ed8; }
+.badge.out_for_delivery { background:#f3e8ff; color:#7e22ce; }
+.badge.delivered        { background:#e9f9ee; color:#16a34a; }
+.badge.cancelled        { background:#fee2e2; color:#b91c1c; }
