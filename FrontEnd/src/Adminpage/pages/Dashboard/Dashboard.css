@@ -1,0 +1,94 @@
+/*KPI grid size */
+.mediconnect-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* KPI card */
+.mediconnect-kpi-card {
+  padding: 28px 32px;              
+  min-height: 140px;               
+  border-radius: 18px;             
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: none;
+}
+
+.mediconnect-kpi-warning {
+  background: #fff3cd;
+}
+
+.mediconnect-kpi-success {
+  background: #d1e7dd;
+}
+
+.mediconnect-kpi-info {
+  background: #cff4fc;
+}
+
+.mediconnect-kpi-danger {
+  background: #f8d7da;
+}
+
+/*Title and number sizes*/
+.mediconnect-kpi-title {
+  font-size: 1.05rem;              
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #6c757d;
+}
+
+.mediconnect-kpi-value {
+  font-size: 2.75rem;              
+  line-height: 1;
+  font-weight: 800;
+  color: #212529;
+}
+
+/* Revenue card */
+.mediconnect-revenue-card {
+  border-radius: 16px;
+  padding: 18px 22px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: none;
+  margin-top: 1rem;
+}
+
+.mediconnect-revenue-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.mediconnect-money {
+  font-size: 2.5rem;               
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0f100f;
+}
+
+/*"Rs." styling */
+.mediconnect-money .mediconnect-currency {
+  font-size: 1.6rem;               
+  font-weight: 700;
+  margin-right: 6px;
+  opacity: 0.9;
+}
+
+.mediconnect-loading-text {
+  color: #6c757d;
+  margin-top: 0.5rem;
+}
+
+/* for better responsiveness */
+@media (max-width: 1200px) {
+  .mediconnect-kpi-grid { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+}
+@media (max-width: 640px) {
+  .mediconnect-kpi-grid { grid-template-columns: 1fr; }
+}
+

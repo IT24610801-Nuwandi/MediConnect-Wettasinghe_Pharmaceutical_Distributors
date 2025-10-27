@@ -1,0 +1,53 @@
+.mediconnect-action-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.mediconnect-action-btn--edit { 
+  background: #6c2bd9; 
+  border-color: #6c2bd9; 
+  color: white;
+}
+
+.mediconnect-action-btn--edit:hover { 
+  opacity: 0.9; 
+}
+
+.mediconnect-action-btn--delete { 
+  background: #e11d48; 
+  border-color: #e11d48; 
+  color: white;
+}
+
+.mediconnect-action-btn--delete:hover { 
+  opacity: 0.9; 
+}
+
+/* make the wrapper handle sideways scroll */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* keep enough width between columns */
+.mediconnect-inventory-table {
+  min-width: 1400px; 
+  table-layout: auto;
+}
+
+.mediconnect-remove-preview {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

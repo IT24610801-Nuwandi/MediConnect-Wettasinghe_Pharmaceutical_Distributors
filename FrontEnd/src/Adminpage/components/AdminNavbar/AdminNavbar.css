@@ -1,0 +1,47 @@
+.mediconnect-navbar {
+  position: sticky;      
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  background: #cbe6ff;
+  border-bottom: 1px solid #dee2e6;
+  height: 70px;
+}
+
+/*Keep mediconnect middle and logout button right corner*/
+.mediconnect-navbar-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* centers the brand text */
+  position: relative;
+  padding: 0 16px;
+}
+
+.admin-brand {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.admin-actions {
+  position: absolute;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-user { color: #6c757d; }
+.admin-logout {
+  padding: 6px 12px;
+  border: 1px solid #9bb9d6;
+  background: #3082d5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.admin-logout:hover { background: #0f4c89; }
+
+
+
