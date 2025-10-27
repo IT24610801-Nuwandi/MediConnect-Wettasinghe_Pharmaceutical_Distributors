@@ -52,7 +52,7 @@ export default function Cart({
         </div>
 
         <div className="actions">
-          <Link className="primary btn-as-link" to="/delivery">Continue to Delivery</Link>
+          <Link className={`primary btn-as-link ${items.length===0?'disabled':''}`} to={items.length?"/delivery":"#"}>Continue to Delivery</Link>
           <Link className="link" to="/">Back to Home</Link>
         </div>
       </div>

@@ -15,6 +15,7 @@ export default function CartPage() {
       imageUrl: it.imageUrl || null,
     }));
 
+
   const load = async () => {
     const data = await CartAPI.list(1);
     setItems(mapFromApi(Array.isArray(data?.items) ? data.items : []));
@@ -59,6 +60,8 @@ export default function CartPage() {
     />
   );
 }
+
+
 
 
 
