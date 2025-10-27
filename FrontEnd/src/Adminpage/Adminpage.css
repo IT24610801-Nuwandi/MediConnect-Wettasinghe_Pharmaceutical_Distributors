@@ -1,0 +1,70 @@
+/* Layout wrapper under the site header */
+.admin-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 120px); 
+  background: #e9eefc;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  background: #0f172a;           
+  color: #e2e8f0;                 
+  padding: 18px 16px;
+  border-right: 1px solid rgba(255,255,255,.08);
+}
+
+.sidebar-heading {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 6px 8px 14px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;         /*to stack vertically */
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: #cbd5e1;                 
+  font-weight: 600;
+}
+
+.sidebar-link:hover {
+  background: rgba(255,255,255,.08);
+  color: #fff;
+}
+
+.sidebar-link.active {
+  background: #2563eb;            
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(37,99,235,.35);
+}
+
+/* Content panel */
+.admin-content {
+  background: #f1f5ff;
+  padding: 18px 22px;
+}
+
+/* Card look */
+.mediconnect-inventory-card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(2,6,23,.06);
+}
+
+/* tighten default table spacing in admin pages */
+.table-responsive { overflow-x: auto; }
+
+
+

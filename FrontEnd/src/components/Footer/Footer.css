@@ -1,0 +1,14 @@
+.main-footer {
+  position:absolute;
+  top: 848px;
+  left:0;
+  right: 0;
+  height: 52px;
+  background-color:#03013c;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
