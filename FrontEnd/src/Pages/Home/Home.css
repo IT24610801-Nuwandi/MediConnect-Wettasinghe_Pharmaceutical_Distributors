@@ -5,17 +5,59 @@
   width: 100%;
 }
 
+/* Top branding section */
+.home-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.home-logo {
+  width: 80px;
+  height: auto;
+}
+
+/* Headings */
 .home h1 {
   color: #03013c;
-  align-items: left;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 .home h2,
 .home h3 {
   color: #2f3bac;
-  font:icon;
-  size: initial;
   font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
 }
 
+/* Optional: tagline styling */
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #334155;
+}
 
+/* Intro paragraph */
+.intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Distributor image block */
+.distributor-image-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.distributor-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

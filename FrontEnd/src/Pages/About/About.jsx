@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
-
+import staffImg from "../../assets/staff.jpg";
+import awardsImg from "../../assets/awards.jpg";
+import journeyImg from "../../assets/journey.jpg";
 
 export default function About() {
   return (
@@ -78,7 +80,7 @@ export default function About() {
           </div>
 
           <div className="media-card">
-            <img src="/assets/staff.jpg" alt="Our staff" />
+            <img src={staffImg} alt="Our staff" />
           </div>
         </div>
       </section>
@@ -88,7 +90,7 @@ export default function About() {
         <div className="container grid two">
           <article className="card">
             <h3>Awards &amp; Accolades</h3>
-            <img src="/assets/awards.jpg" alt="Awards & Accolades" />
+            <img src={awardsImg}  alt="Awards & Accolades" />
             <p className="muted">
               Recognized multiple times for distribution excellence and service
               quality across Sri Lanka.
@@ -97,7 +99,7 @@ export default function About() {
 
           <article className="card">
             <h3>Our Journey</h3>
-            <img src="/assets/journey.jpg" alt="Company timeline" />
+            <img src={journeyImg} alt="Company timeline" />
             <p className="muted">
               Milestones from 1998 to today—partnerships with SPC, SPMC and
               leading manufacturers, plus national awards along the way.
