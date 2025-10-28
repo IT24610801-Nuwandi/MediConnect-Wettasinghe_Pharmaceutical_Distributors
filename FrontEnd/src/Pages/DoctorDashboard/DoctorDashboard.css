@@ -1,0 +1,120 @@
+/* Container layout */
+.dashboard-shell {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #f9f9f9; /* Light background to support black text */
+  color: #000000;
+  padding: 20px;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-nav a {
+  color: #000000; /* Black text */
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-nav a:hover {
+  background-color: #e0e0e0; /* Light hover background */
+  color: #000000;
+}
+
+/* Main panel */
+.dashboard-main {
+  flex: 1;
+  padding: 40px;
+}
+
+.dashboard-main h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.dashboard-main p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Quick Actions */
+.dashboard-section {
+  margin-top: 2rem;
+}
+
+.dashboard-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #003366;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dashboard-shell {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dashboard-main {
+    padding: 20px;
+  }
+}
